@@ -1,0 +1,19 @@
+import javax.swing.JApplet;
+import java.awt.*;
+public class  Stickfigure extends JApplet
+{
+	public void paint(Graphics page)
+	{
+		page.drawOval(70,65,30,25);
+		page.drawLine(85,95,85,140);
+		page.drawLine(85,125,100,95);
+		page.drawLine(85,125,70,95);
+		page.drawLine(85,140,70,165);
+		page.drawLine(85,140,100,165);
+
+		
+		
+	} // end paint
+} // end class
+
+// save this in appropriate sub-directory. Compile it using javac to gernerate .class file. Insert that file into html

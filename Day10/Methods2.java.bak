@@ -1,0 +1,116 @@
+import java.io.*;
+import java.util.Scanner;
+
+class  Methods2
+{
+	public static void main(String[] args) throws IOException
+	{	
+		Scanner input = new Scanner(System.in);
+		Double numb;
+		Double[] nums = new Double [10];
+		Loadit(nums);
+		System.out.println("Numbers in Your Array: ");
+		bubble(nums);
+		display(nums);
+		average(nums);
+		System.out.println("Average Number Value in Your Array: " + average(nums));
+		System.out.print("\nEnter a Number Value: ");
+		numb=input.nextDouble();
+		check(nums, numb);
+			
+			System.out.print("\nThe Value " + numb + " is ");
+			
+			if (result=true)
+			{
+				System.out.print("in the Array. \n");
+			}
+			
+			else
+			{
+				System.out.print("not in the Array. \n");
+			}
+
+
+	} // ends main
+
+	static void Loadit(Double[] nums)
+	{
+		Scanner input = new Scanner(System.in);
+
+		for (int i=0;i<nums.length ; i++ )
+		{
+			System.out.println("Enter a Number: ");
+			nums[i] = input.nextDouble();
+		}
+	
+
+	} // ends loadit
+
+
+
+static void bubble(Double[] nums)
+{
+	
+	int a, b, size;
+	size = nums.length;
+	Double t;
+
+	for (a=1; a < size ; a++ )
+	{
+		for (b=size-1; b >= a ; b-- )
+		{
+			if (nums[b-1] > nums[b])
+			{
+			// exchange elements
+			t = nums[b-1];
+			nums[b-1] = nums[b];
+			nums[b] = t;
+			}
+		}
+	}
+
+} // ends bubble
+
+
+	static void display(Double[] array)
+	{
+		for (int i=0;i<array.length ;i++ )
+		{
+			System.out.println(array[i] + " ");
+		}
+	} // ends display
+
+
+	static Double average(Double[] array)
+	{
+		double avg=0;
+
+		for (int i=0;i<array.length ;i++ )
+		{
+			avg=avg+array[i];
+		}
+
+		avg=avg/array.length;
+
+		return avg;
+
+	} // ends average
+
+	static boolean check(Double[] nums, Double numb)
+	{
+
+		boolean result=false; 
+
+		for (int i=0;i<nums.length ;i++ )
+		{
+			if (nums[i]==numb)
+			{
+				result=true;
+			}
+		}
+
+		return result;
+	} // ends numb
+
+
+} // ends class

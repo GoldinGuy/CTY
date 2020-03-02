@@ -1,0 +1,84 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.io.*;
+
+
+class  Blackjack2
+{
+
+		static BufferedReader keyboard = new
+		BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) 
+	{
+		boolean on=true;
+		Random randomNumbers=new Random();
+		Scanner input = new Scanner(System.in);
+
+		String a, b, c, d;
+		int x, y, z;
+
+
+		int card[]=new int[52];
+		card[0]=1;
+		card[1]=2;
+		card[2]=3;
+		card[3]=4;
+		card[4]=5;
+		card[5]=6;
+		card[6]=7;
+		card[7]=8;
+		card[8]=9;
+		card[9]=10;
+		card[10]=10;
+		card[11]=10;
+		card[12]=10;
+		card[13]=10;		
+		card[14]=1;
+		card[15]=2;
+		card[16]=3;
+		card[17]=4;
+		card[18]=5;
+		card[19]=6;
+		card[20]=7;
+		card[21]=8;
+		card[22]=9;
+		card[23]=10;
+		card[24]=10;
+		card[25]=10;
+		card[26]=10;
+		card[27]=10;
+		card[28]=1;
+		card[29]=2;
+		card[30]=3;
+		card[31]=4;
+		card[32]=5;
+		card[33]=6;
+		card[34]=7;
+		card[35]=8;
+		card[36]=9;
+		card[37]=10;
+		card[38]=10;
+		card[39]=10;
+		card[40]=10;
+		card[41]=10;
+		card[42]=1;
+		card[43]=2;
+		card[44]=3;
+		card[45]=4;
+		card[46]=5;
+		card[47]=6;
+		card[48]=7;
+		card[49]=8;
+		card[50]=9;
+		card[51]=10;
+
+
+
+
+
+
+
+
+	} // end of main
+} // end of class

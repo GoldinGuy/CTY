@@ -1,0 +1,12 @@
+George
+nice
+90
+Barney
+nice
+34
+Joe
+Mean
+87
+Troy
+hyperactive
+2

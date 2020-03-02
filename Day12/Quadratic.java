@@ -1,0 +1,64 @@
+class Quadratic
+{
+Double r1, r2, a1, b1, c1;
+Double dis;
+String sign;
+boolean discriminant;
+
+Quadratic(Double a, Double b, Double c)
+	{
+		a1=a;
+		b1=b;
+		c1=c;
+	}
+
+	void Doit()
+	{ 
+		if (Checkit())
+		{
+		r1= (-b1 + Math.sqrt(dis))/(2*a1);
+		r2= (-b1 - Math.sqrt(dis))/(2*a1);
+		}
+	}
+
+	boolean Checkit()
+	{
+		dis = (b1*b1) - (4*a1*c1);
+
+		if (dis<0)
+		{
+			discriminant=false;
+		}
+
+		else 
+		{
+			discriminant=true;
+		}
+
+		if (discriminant == true)
+		{
+			sign=("positive (+)");
+		}
+
+		else if (discriminant == false)
+		{
+			sign=("negative (-)");
+		}
+
+		return discriminant;
+	}
+
+	void Display()
+	{
+		if (Checkit())
+		{
+		System.out.println("The Roots of the Equation are " + r1 + " and " + r2 + " \nThe Discriminant is " + sign);
+		}
+
+		else 
+		{
+			System.out.println("No Solution");
+		}
+	}
+
+} // end class

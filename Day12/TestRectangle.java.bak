@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TestRectangle
+{
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+
+		int a, b;
+
+		System.out.println("Enter Width: ");
+		a=input.nextInt();
+
+		System.out.println("Enter Length: ");
+		b=input.nextInt();
+
+		Rectangle Rect1 = new Rectangle(a,b);
+		Rect1.area();
+		Rect1.perimeter();
+		Rect1.display();
+
+	} // end main
+} // end class

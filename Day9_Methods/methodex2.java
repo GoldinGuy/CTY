@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.Scanner;
+
+class  methodex2
+{
+	public static void main(String[] args) throws IOException
+	{
+		int[] array = {0,0,0,0,0};
+		System.out.println("Array before call ");
+		display(array);
+		convert(array);
+		System.out.println("Array after call ");
+		display(array);
+
+	} // ends main
+
+	static void convert(int[] array)
+	{
+		for (int i=0;i<array.length ; i++ )
+		{
+			array[i] = 99999;
+		}
+	
+
+	} // ends conver
+
+	static void display(int[] array)
+	{
+		for (int i=0;i<array.length ;i++ )
+		{
+			System.out.println(array[i] + " ");
+		}
+	} // ends display
+
+} // ends class
